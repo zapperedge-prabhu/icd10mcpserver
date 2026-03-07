@@ -493,30 +493,6 @@ Use these chapter names when searching by clinical area:
 
 ---
 
-## Tips and Tricks
-
-**Be conversational** — You do not need to use exact commands. Just ask naturally:
-> *"I need a code for a patient with type 2 diabetes who also has a foot ulcer"*
-> *"What is the most specific code for community-acquired pneumonia?"*
-
-**Always check billable status before submitting** — Many codes in ICD-10 are header or category codes that exist for organizational purposes only. A claim submitted with a non-billable code will be rejected. Always confirm a code is billable before including it on a claim.
-
-**Use category browse for specificity decisions** — When documentation could support multiple levels of specificity, use category browse to see all available options. For example, `Show me all codes in E11` displays all 117 Type 2 diabetes codes so you can match the most specific code to the documentation.
-
-**Combine CM and PCS searches for inpatient coding** — ICD-10-CM codes are used for diagnoses; ICD-10-PCS codes are used for inpatient procedures. For inpatient records, ask for both:
-> *"Find codes for hip replacement — both diagnosis and procedure"*
-
-**ICD-9 migration** — If you are still working with legacy ICD-9 codes in older records, use the migration hint feature to get ICD-10 suggestions as a starting point. Always cross-reference with CMS GEMs before using on claims.
-
-**Narrow down large result sets** — If a search returns too many codes, add more specificity:
-> *"Find codes for diabetes"* — many results
-> *"Find billable codes for type 2 diabetes with chronic kidney disease"* — targeted results
-
-**Use chapter search for audits** — When reviewing claims by clinical category, search by chapter to pull all codes within a body system area:
-> *"Find all codes in the circulatory chapter related to heart failure"*
-
----
-
 ## FAQ
 
 **Q: What code sets are included?**
