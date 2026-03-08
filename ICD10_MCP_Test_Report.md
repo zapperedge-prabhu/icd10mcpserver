@@ -396,7 +396,6 @@ icd10_search(query="appendix", type="PCS")  # recommended
 - **MCP Server URL:** `https://icd10mcpserver.zapperedge.com/sse`
 - **CMS ICD-10 Official Page:** https://www.cms.gov/medicare/coding-billing/icd-10-codes
 - **CMS GEMs (ICD-9 → ICD-10 Crosswalk):** https://www.cms.gov/medicare/coding-billing/icd-10-codes/icd-10-cm-icd-10-pcs-gems
-- **User Manual:** See `USER_MANUAL.md` in this repository
 - **Feature Requests / Issues:** feature-request@zapperedge.com
 
 ---
