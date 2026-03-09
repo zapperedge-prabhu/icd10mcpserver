@@ -33,7 +33,6 @@ A free, AI-powered ICD-10 code lookup tool that lets you search **178,000+ ICD-1
 | Browse an entire code category | *"Show me all codes in category E11"* |
 | Search by chapter | *"What codes are in the respiratory chapter?"* |
 | Find ICD-10-PCS procedure codes | *"Search for appendectomy procedure codes"* |
-| Get ICD-9 to ICD-10 migration hints | *"I have ICD-9 code 250.00, what is the ICD-10 equivalent?"* |
 | Check database status | *"Check the ICD-10 database status"* |
 
 ---
@@ -295,16 +294,6 @@ Look up PCS code 0BH17EZ
 
 ---
 
-### ICD-9 to ICD-10 Migration Hints
-```
-I have ICD-9 code 250.00 — what ICD-10 codes should I consider?
-```
-```
-What ICD-10 code maps to ICD-9 410.9?
-```
-> Note: This tool provides keyword-based suggestions as a starting point. For official claim submission, always confirm using CMS GEMs (General Equivalence Mappings) at cms.gov.
-
----
 
 ### Pagination — Get More Results
 ```
@@ -419,16 +408,9 @@ Search for appendectomy ICD-10-PCS codes
 
 ---
 
-### Test 11 — ICD-9 Migration Hint
-**Prompt:**
-```
-I have ICD-9 code 250.00 — what ICD-10 codes should I look at?
-```
-**Expected result:** Suggested ICD-10-CM codes in the E11 diabetes mellitus category, along with a reminder to confirm with CMS GEMs for official crosswalk.
 
----
 
-### Test 12 — Pagination Test
+### Test 11 — Pagination Test
 **Prompt:**
 ```
 Find codes for diabetes mellitus, show 5 results
@@ -455,8 +437,7 @@ Show the next 5
 | 8 | Category browse | Returns all codes in category |
 | 9 | Chapter lookup | Returns correct chapter name |
 | 10 | PCS search | Returns procedure codes |
-| 11 | ICD-9 migration hint | Returns ICD-10 suggestions |
-| 12 | Pagination | Page 2 has different results than page 1 |
+| 11 | Pagination | Page 2 has different results than page 1 |
 
 All 12 passing = Tool is fully working for medical coding and RCM use.
 
@@ -516,8 +497,6 @@ A: Yes. Specify "PCS" in your query to search procedure codes. For example: *"Fi
 **Q: Does this replace official coding software or encoder tools?**
 A: This tool is designed for quick lookups, validation, and research during the coding and billing workflow. For official claim submission, always confirm codes in your encoder or against the official CMS code files. This tool does not replace AHA Coding Clinic guidance or official payer policies.
 
-**Q: Can it help with ICD-9 to ICD-10 crosswalks?**
-A: The tool provides keyword-based suggestions to help identify candidate ICD-10 codes when given an ICD-9 code or condition description. For official mappings, use the CMS General Equivalence Mappings (GEMs) at cms.gov/medicare/coding-billing/icd-10-codes/icd-10-cm-icd-10-pcs-gems.
 
 **Q: What if I get no results?**
 A: Try broadening your search — use a shorter keyword or remove modifiers. For example, instead of "community-acquired bacterial pneumonia" try "pneumonia." Also confirm you are spelling the condition correctly.
